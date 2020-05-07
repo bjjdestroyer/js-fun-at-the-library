@@ -43,12 +43,6 @@ var isFavorite = false;
 // comparison operator.
 var isShortStory = pages < 25;
 
-console.log(title);
-console.log(movie);
-console.log(sequel);
-console.log(isFavorite);
-console.log(isShortStory);
-
 //------------------------- Conditionals -------------------------//
 
 
@@ -83,14 +77,14 @@ var books = ["Cujo", "Thud!", "Jingo", "Blood", "Lamb"];
 
 // Write the code to access the 3rd element of the Array, using bracket
 // notation.
-console.log(books[2]);
+books[2];
 
 // Create a new variable "belowTwoHundred" and assign it to an Array of 12
 // different numbers below two hundred.
 var belowTwoHundred = [12, 37, 46, 90, 105, 127, 199, 187, 166, 3, 143, 100];
 
 // Write the code to access the number cllosest to two hundred, using bracket notation.
-console.log(belowTwoHundred[6]);
+belowTwoHundred[6];
 
 //------------------------- Objects -------------------------//
 
@@ -102,9 +96,8 @@ var dictionary = {
   hasThesaurus: false,
 }
 
-console.log(dictionary);
+
 // Write the code to add the key of pageCount, with the value of 720. Use dot
 // notation to do this. DO NOT modify your code from above.
 
 dictionary.pageCount = 720;
-console.log(dictionary)
