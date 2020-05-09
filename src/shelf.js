@@ -18,12 +18,12 @@ function listTitles(shelf) {
 }
 
 function searchShelf(shelf, title) {
-  var duneBook = shelf[0].title;
-  var hyperionBook = shelf[1].title
-  if (duneBook === title || hyperionBook === title) {
-    return true;
-  } else {
-    return false;
+  for (var i = 0; i < shelf.length; i++) {
+    if (shelf[i].title === title) {
+      return true;
+    } else {
+      return false
+    }
   }
 }
 
