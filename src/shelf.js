@@ -26,7 +26,6 @@ function listTitles(shelf) {
         titles += `${shelf[i].title}, `;
       }
     }
-  //`${shelf[0].title}, ${shelf[1].title}, ${shelf[2].title}`;
   return titles;
 }
 
