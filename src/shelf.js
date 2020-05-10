@@ -18,14 +18,18 @@ function listTitles(shelf) {
 }
 
 function searchShelf(shelf, title) {
+  var isItHere = "";
   for (var i = 0; i < shelf.length; i++) {
-    if (shelf[i].title === title) {
-      return true;
-    } else {
-      return false
+    if (shelf[i].title.includes(title)) {
+      isItHere = "yes";
     }
   }
-}
+    if (isItHere === "yes") {
+      return true;
+    }else {
+      return false;
+    }
+  }
 
 module.exports = {
   shelfBook: shelfBook,

@@ -1,4 +1,4 @@
-˚var assert = require("chai").assert;
+var assert = require("chai").assert;
 var shelfBook = require("../src/shelf.js").shelfBook;
 var unshelfBook = require("../src/shelf.js").unshelfBook;
 var listTitles = require("../src/shelf.js").listTitles;
