@@ -9,11 +9,24 @@ function shelfBook(book, shelf) {
 }
 
 function unshelfBook(book, shelf) {
-  return shelf.splice(1, 1);
+  for (var i = 0; i < shelf.length; i++) {
+    if (shelf[i].title === book) {
+      shelf.splice(1, 1);
+    }
+  }
+  return;
 }
 
 function listTitles(shelf) {
-  var titles = `${shelf[0].title}, ${shelf[1].title}, ${shelf[2].title}`;
+  var titles = "";
+    for (var i = 0; i < shelf.length; i++) {
+      if (i === shelf.length - 1) {
+        titles += `${shelf[i].title}`;
+      } else {
+        titles += `${shelf[i].title}, `;
+      }
+    }
+  //`${shelf[0].title}, ${shelf[1].title}, ${shelf[2].title}`;
   return titles;
 }
 
