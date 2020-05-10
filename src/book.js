@@ -3,12 +3,12 @@ function createTitle(title) {
 };
 
 function buildMainCharacter(name, age, pronouns) {
-  var ghoulCharacter = {
+  var character = {
     name: name,
     age: age,
-    pronouns: pronouns
+    pronouns: pronounss
   }
-  return ghoulCharacter;
+  return character;
 }
 
 
