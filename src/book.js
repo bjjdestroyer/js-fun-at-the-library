@@ -6,7 +6,7 @@ function buildMainCharacter(name, age, pronouns) {
   var character = {
     name: name,
     age: age,
-    pronouns: pronounss
+    pronouns: pronouns,
   }
   return character;
 }
